@@ -1,1 +1,15 @@
-
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/voting
+    username: voting
+    password: voting
+  flyway:
+    locations: classpath:db/migration
+  jpa:
+    properties:
+      hibernate:
+        ddl-auto: update
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          lob:
+            non_contextual_creation: true
