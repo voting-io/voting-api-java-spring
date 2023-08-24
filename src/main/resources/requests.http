@@ -1,0 +1,11 @@
+POST localhost:8080/sessions
+Content-Type: application/json
+
+{
+    "name": "Test Session"
+}
+
+###
+
+GET localhost:8080/sessions
+Content-Type: application/json
